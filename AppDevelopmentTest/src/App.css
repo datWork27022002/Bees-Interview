@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Dark mode styles */
+
+html.dark {
+    background-color: #1a202c;
+    color: white;
+}
+
+/* Các kiểu cho bảng */
+html.dark .ant-table {
+    background-color: #2d3748; /* Màu nền của bảng khi ở dark mode */
+    border-color: #4a5568; /* Màu viền của bảng khi ở dark mode */
+}
+
+html.dark .ant-table-thead .ant-table-cell {
+    background-color: #4a5568; /* Màu nền của tiêu đề bảng khi ở dark mode */
+}
+
+html.dark .ant-table-tbody .ant-table-cell {
+    background-color: #2d3748; /* Màu nền của các ô trong bảng khi ở dark mode */
+    color: white; /* Màu chữ của các ô trong bảng khi ở dark mode */
+}
+
+html.dark .ant-table-thead .ant-table-cell:hover {
+    background-color: #2d3748; /* Màu nền của các ô trong bảng khi ở dark mode */
+}
+
+html.dark .ant-table-tbody > tr:nth-child(odd) {
+    background-color: #4a5568; /* Màu nền cho các dòng lẻ trong bảng khi ở dark mode */
+}
+
+html.dark .ant-table-tbody .ant-table-row:hover .ant-table-cell {
+    background-color: #1a202c !important; /* Màu nền khi hover trên dòng bảng khi ở dark mode */
+}
+
+html.dark .ant-table-pagination .ant-pagination-item {
+    background-color: #4a5568; /* Màu nền của tiêu đề bảng khi ở dark mode */
+}
+
+.dark .ant-table-pagination .ant-pagination-item a {
+    color: white; /* Màu chữ của phân trang khi ở dark mode */
+}
+
+.dark .ant-table-pagination .ant-pagination-item:hover {
+    background-color: white;
+}
+
+.dark .ant-table-pagination .ant-pagination-item:hover a {
+    color: #4a5568; /* Màu chữ của phân trang khi ở dark mode */
+}
+
+.ant-pagination-item,
+.ant-table-cell,
+.ant-table-tbody > tr:nth-child(odd),
+.ant-table {
+    transition: all 0.7s ease-in-out;
+}
